@@ -1,0 +1,85 @@
+Questions :Why do you think the SNOWFLAKE and SNOWFLAKE_SAMPLE_DATA databases did not show up on the list during your share creation process? 
+
+ Because the NATIONS table comes from an Inbound Share (SNOWFLAKE_SAMPLE_DATA) 
+
+Because you can't share a share. 
+
+ Explanation: 
+
+Inbound Share Restriction: Data that comes from an inbound share (e.g., SNOWFLAKE_SAMPLE_DATA) cannot be reshared. This is a limitation in Snowflake to ensure that data ownership and sharing permissions are respected. 
+
+You Can't Share a Share: Snowflake does not allow resharing of data that has already been shared with you. This means you cannot include data from an inbound share in an outbound share. 
+
+************************************************************************************************************************** 
+
+Question: Mark all the true statements below.  
+
+1.Snowflake has over 10 USAGE types.  
+
+2.Snowflake has just 3 USAGE types.  
+
+3.Snowflake has just 4 USAGE types.  
+
+4.Snowflake has over 10 SERVICE types.  
+
+5.Snowflake has just 3 SERVICE types. 
+
+6. Snowflake has just 4 SERVICE types.  
+
+7.Compute is a SERVICE type.  
+
+8.Compute is a USAGE type.  
+
+9.Warehouses are a SERVICE type.  
+
+10.Warehouses are a USAGE type. 
+
+===> 
+
+Snowflake has just 3 USAGE types. 
+
+Snowflake has over 10 SERVICE types. 
+
+Compute is a USAGE type. 
+
+Warehouses are a SERVICE type. 
+
+************************************************************************************************************************************************************************* 
+
+Question: We want to check the ORGANIZATION_USAGE schema for our new ACME account and we want to use DORA. Why not right now? 
+
+We often need to wait a month before the metadata catches up. 
+
+We often need to wait a week before the metadata catches up. 
+
+We often need to wait 3 days before the metadata catches up. 
+
+We often need to wait overnight before the metadata catches up. 
+
+====> 
+The correct answer is: 
+We often need to wait overnight before the metadata catches up. 
+
+Explanation: 
+
+  
+
+The ORGANIZATION_USAGE schema in Snowflake, which provides insights into usage and billing data at the organization level, typically requires some time for the metadata to populate after a new account is created. In most cases, this process happens overnight, as Snowflake updates and syncs the metadata during its regular processing cycles. This delay is necessary to ensure that all relevant data is accurately captured and made available for querying. 
+
+************************************************************************************* 
+
+- STORAGE costs are calculated and charged monthly, based on daily average. 
+
+  - Snowflake bills storage as TB-months using the daily average storage for the month. 
+
+- COMPUTE Credits (based on Warehouse time used, Serverless Compute used, Cloud Svcs Compute used). 
+
+  - Compute is metered by usage (warehouse runtime, serverless operations, and cloud services compute). 
+
+- DATA TRANSFER COSTS are for data moved OUT of Snowflake to other locations (incoming data is not charged). 
+
+  - Egress (outbound) data transfer is typically what Snowflake charges for; inbound data is not charged. 
+
+ 
+
+*************************************************************************************
