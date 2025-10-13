@@ -1,0 +1,2 @@
+SELECT SYSTEM$ENABLE_GLOBAL_DATA_SHARING_FOR_ACCOUNT(' < accountname >'); --->We need to make sure this account has permissions enabled to share data to external third parties; accounts don't enable these permissions by default. If we don't adjust this, any accounts that want to ingest your data will either not see the listing or receive an error when trying to access it.
+  
