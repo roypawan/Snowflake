@@ -1,0 +1,21 @@
+1. We can get the DDL of a Procedure or Function using below get_ddl() statements.
+	SELECT get_ddl('PROCEDURE','TEST_EMP.PROCS.SP_MIGRATE_VIEWS(VARCHAR,VARCHAR,VARCHAR,VARCHAR,VARCHAR)');
+	SELECT get_ddl('FUNCTION','MYDB.PUBLIC.UDF_JUL_GRE_DATE(VARCHAR)');
+	
+2. It is difficult to get the procedure name or function name along with arguments as shown above from INFORMATION_SCHEMA or some where else.
+
+3. When I query the INFORMATION_SCHEMA.PROCEDURES tables, the result come like.. 
+   But I can't use this info to fetch the Procedure or Function definition.
+	SELECT * FROM TEST_EMP.INFORMATION_SCHEMA.PROCEDURES;
+
+4. So we have to use Devops tools or a manual approach to migrate Procedures or Functions.
+5. Get the DDL of a single Procedure or all Procedures by using below queries and Replace the databases manually and Run that DDL in the Target database.
+
+6. To get the definition a specific procedure or Function
+	SELECT get_ddl('PROCEDURE','TEST_EMP.PROCS.SP_MIGRATE_VIEWS(VARCHAR,VARCHAR,VARCHAR,VARCHAR,VARCHAR)');
+	SELECT get_ddl('FUNCTION','MYDB.PUBLIC.UDF_JUL_GRE_DATE(VARCHAR)'); 
+	
+7. To get definitions of all Procedure and Functions present in a schema
+	SELECT get_ddl('SCHEMA','TEST_EMP.PROCS');
+	
+8. If you have any thought do it or any alternate way, please let me know in the comments, will appreciate that.
