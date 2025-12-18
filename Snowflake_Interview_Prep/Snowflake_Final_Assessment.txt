@@ -1,0 +1,22 @@
+1. What are the Advantages of Snowflake over traditional Databases?
+2. How the Cost is calculated in Snowflake?
+3. What is the Difference between secure view and materialized view
+4. Write a query to create a masking policy to hide data from all users/roles except role 'LEADERSHIP'
+5. Write alter statement to modify the body of masking policy
+6. What are the system defined roles in Snowflake?
+7. Write queries to grant SELECT priviliges on table 'SALES_DB.TGT_TBLS.PRODUCT'
+8. How can you share the data with non snowflake users?
+9. How to refresh the data in materialized views?
+10. Whenever we run some query, which cache it will scan first?
+11. Write a query to to schedule a task to run every friday at 7 AM
+12. Write a query to set the dependency between 2 tasks like Task_A => TASK_B
+13. Write a merge query to consume only updated records in the stream
+14. What are the types of streams available in Snowflake?
+15. Write a query to create external table over AWS S3 stage files
+16. Snowflake is an ETL or ELT?
+17. Tell me one usecase where you have used Time travel and cloning
+18. Tell me some performance improvement techniques you followed
+19. What is Diff between Union and Union All?
+20. Write sql query to fetch department wise highest salary from employee table
+21. What is diff between Primary Key, Unique Key and Surrogate Key?
+22. Write a query to fetch all the employee details with even number emp_id.
